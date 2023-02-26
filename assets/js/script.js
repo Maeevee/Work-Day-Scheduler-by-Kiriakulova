@@ -19,6 +19,15 @@ function colorChange() {
 
         //Get the id of the textarea and turn it into a number
         var timeBlockHour = parseInt($(this).attr("id"));
+
+        //Change the color of the time block based on the time of day
+        if (timeBlockHour < hourNumber) {
+            $(this).addClass("past");
+        } else if (timeBlockHour === hourNumber) {
+            $(this).addClass("present");
+        } else {
+            $(this).addClass("future");
+        }
     });
 }
 colorChange();
