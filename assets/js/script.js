@@ -35,3 +35,14 @@ colorChange();
 
 //This function will update the time blocks every 1 second
 setInterval(colorChange, 1000);
+
+
+//Clear loccal storade at 00:00
+function clearLocalStorage() {
+    var now = moment().format('H');
+    const nowNumber = parseInt(now);
+    if (nowNumber === "0") {
+        localStorage.clear();
+    }
+}
+clearLocalStorage();
