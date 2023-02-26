@@ -31,3 +31,7 @@ function colorChange() {
     });
 }
 colorChange();
+
+
+//This function will update the time blocks every 1 second
+setInterval(colorChange, 1000);
