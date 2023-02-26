@@ -12,5 +12,13 @@ function colorChange() {
     //Get the current hour and turn it into a number
     var currentTime = moment().format('H');
     const hourNumber = parseInt(currentTime);
+
+    //Add individual id to each textarea
+    textarea.each(function(index) {
+        $(this).attr('id', index + 9);
+
+        //Get the id of the textarea and turn it into a number
+        var timeBlockHour = parseInt($(this).attr("id"));
+    });
 }
 colorChange();
