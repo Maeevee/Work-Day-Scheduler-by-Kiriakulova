@@ -1,3 +1,4 @@
+/* General styles */
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +11,22 @@ body {
   line-height: 1;
 }
 
+/* Header */
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+header p.notification span {
+  color: #ce0707;
+  font-weight: bold;
+}
+
+/* Timeblocks */
 
 textarea {
   background: transparent;
@@ -20,13 +37,7 @@ textarea {
   padding: 10px;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
-}
+
 
 .description {
   white-space: pre-wrap;
@@ -35,6 +46,7 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  margin-bottom: 3px;
 }
 
 .row {

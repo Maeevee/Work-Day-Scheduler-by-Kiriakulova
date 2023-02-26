@@ -3,6 +3,10 @@ var notification = $(".notification");
 var timeBlock = $(".time-block");
 var textarea = $("textarea");
 
+//Get the current hour and turn it into a number
+var currentTime = moment().format('H');
+const hourNumber = parseInt(currentTime);
+
 
 //Display the current day at the top of the calendar
 var today = moment().format('dddd, MMMM Do');
@@ -39,9 +43,7 @@ setInterval(colorChange, 1000);
 
 //Clear loccal storade at 00:00
 function clearLocalStorage() {
-    var now = moment().format('H');
-    const nowNumber = parseInt(now);
-    if (nowNumber === "0") {
+    if (hourNumber === "0") {
         localStorage.clear();
     }
 }
