@@ -11,11 +11,10 @@ const hourNumber = parseInt(currentTime);
 //Display the current day at the top of the calendar
 var today = moment().format('dddd, MMMM Do');
 $("#currentDay").text(today);
+
+
 //This function will change the color of the time blocks based on the time of day
 function colorChange() {
-    //Get the current hour and turn it into a number
-    var currentTime = moment().format('H');
-    const hourNumber = parseInt(currentTime);
 
     //Add individual id to each textarea
     textarea.each(function(index) {
@@ -37,8 +36,15 @@ function colorChange() {
 colorChange();
 
 
-//This function will update the time blocks every 1 second
-setInterval(colorChange, 1000);
+//Saving the text in the textarea to local storage
+    saveButton.on("click", function() {
+        var text = $(this).siblings("textarea").val();
+        var time = $(this).siblings("textarea").attr("id");
+
+        //Save text to local storage
+        localStorage.setItem(time, text);
+
+    });
 
 
 //Clear loccal storade at 00:00
