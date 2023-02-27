@@ -44,6 +44,14 @@ colorChange();
         //Save text to local storage
         localStorage.setItem(time, text);
 
+    //Notification that item was saved to localStorage
+    notification.removeClass("d-none");
+
+    //Hide the notification after 5 seconds
+    setTimeout(function() {
+        notification.addClass("d-none");
+    }, 5000);
+    });
     });
 
 
