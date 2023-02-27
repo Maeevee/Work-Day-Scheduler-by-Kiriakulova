@@ -52,6 +52,13 @@ colorChange();
         notification.addClass("d-none");
     }, 5000);
     });
+
+
+//Get the text from local storage and display it in the textarea
+    textarea.each(function() {
+        var time = $(this).attr("id");
+        var text = localStorage.getItem(time);
+        $(this).text(text);
     });
 
 
