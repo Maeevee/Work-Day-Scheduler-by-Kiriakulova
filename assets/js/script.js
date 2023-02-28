@@ -3,7 +3,16 @@ var notification = $(".notification");
 var timeBlock = $(".time-block");
 var textarea = $("textarea");
 
-clearLocalStorage();
+
+//Clear loccal storade on next day
+
+var dataDate = localStorage.getItem("dataDate");
+var today = moment().format("YYYY-MM-DD");
+if (dataDate !== today) {
+    localStorage.clear();
+    localStorage.setItem("dataDate", today);
+}
+
 
 //Get the current hour and turn it into a number
 var currentTime = moment().format('H');
@@ -33,7 +42,12 @@ function colorChange() {
         } else {
             $(this).addClass("future");
         }
-    });
+
+        //Get the text from local storage and display it in the textarea
+        var time = $(this).attr("id");
+        var text = localStorage.getItem(time);
+        $(this).text(text);
+        });
 }
 colorChange();
 
@@ -49,31 +63,8 @@ saveButton.on("click", function() {
     //Notification that item was saved to localStorage
     notification.removeClass("d-none");
 
-//Hide the notification after 5 seconds
-setTimeout(function() {
-    notification.addClass("d-none");
-}, 5000);
+    //Hide the notification after 5 seconds
+    setTimeout(function() {
+        notification.addClass("d-none");
+    }, 5000);
 });
-
-
-//Get the text from local storage and display it in the textarea
-function getText() {
-textarea.each(function() {
-    var time = $(this).attr("id");
-    var text = localStorage.getItem(time);
-    $(this).text(text);
-});
-}
-
-
-//Clear loccal storade on next day
-
-function clearLocalStorage() {
-    var dataDate = localStorage.getItem("dataDate");
-    var today = moment().format("YYYY-MM-DD");
-    if (dataDate !== today) {
-        localStorage.clear();
-        localStorage.setItem("dataDate", today);
-    }
-    getText();
-}
