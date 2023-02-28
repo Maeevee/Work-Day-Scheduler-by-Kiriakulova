@@ -3,6 +3,8 @@ var notification = $(".notification");
 var timeBlock = $(".time-block");
 var textarea = $("textarea");
 
+clearLocalStorage();
+
 //Get the current hour and turn it into a number
 var currentTime = moment().format('H');
 const hourNumber = parseInt(currentTime);
@@ -37,35 +39,41 @@ colorChange();
 
 
 //Saving the text in the textarea to local storage
-    saveButton.on("click", function() {
-        var text = $(this).siblings("textarea").val();
-        var time = $(this).siblings("textarea").attr("id");
+saveButton.on("click", function() {
+    var text = $(this).siblings("textarea").val();
+    var time = $(this).siblings("textarea").attr("id");
 
-        //Save text to local storage
-        localStorage.setItem(time, text);
+    //Save text to local storage
+    localStorage.setItem(time, text);
 
     //Notification that item was saved to localStorage
     notification.removeClass("d-none");
 
-    //Hide the notification after 5 seconds
-    setTimeout(function() {
-        notification.addClass("d-none");
-    }, 5000);
-    });
+//Hide the notification after 5 seconds
+setTimeout(function() {
+    notification.addClass("d-none");
+}, 5000);
+});
 
 
 //Get the text from local storage and display it in the textarea
-    textarea.each(function() {
-        var time = $(this).attr("id");
-        var text = localStorage.getItem(time);
-        $(this).text(text);
-    });
-
-
-//Clear loccal storade at 00:00
-function clearLocalStorage() {
-    if (hourNumber === "0") {
-        localStorage.clear();
-    }
+function getText() {
+textarea.each(function() {
+    var time = $(this).attr("id");
+    var text = localStorage.getItem(time);
+    $(this).text(text);
+});
 }
-clearLocalStorage();
+
+
+//Clear loccal storade on next day
+
+function clearLocalStorage() {
+    var dataDate = localStorage.getItem("dataDate");
+    var today = moment().format("YYYY-MM-DD");
+    if (dataDate !== today) {
+        localStorage.clear();
+        localStorage.setItem("dataDate", today);
+    }
+    getText();
+}
