@@ -15,9 +15,7 @@ The time blocks will change color based on the current time of day, with past ho
 Users can also edit or delete their activities by clicking on the corresponding time block and making changes to the text.
 
 ## Credits
-This application was created by [@Maeevee][def] using [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [Google Fonts](https://fonts.google.com/), [jQuery](https://jquery.com/) and the [Moment.js](https://momentjs.com/) library, [ChatGPT](https://openai.com/blog/chatgpt/) and [Stack Overflow](https://stackoverflow.com/).
+This application was created by [@Maeevee](https://github.com/Maeevee) using [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [Google Fonts](https://fonts.google.com/), [jQuery](https://jquery.com/) and the [Moment.js](https://momentjs.com/) library, [ChatGPT](https://openai.com/blog/chatgpt/) and [Stack Overflow](https://stackoverflow.com/).
 
 ## License
 This application is licensed under the MIT license.
-
-[def]: https://github.com/Maeevee
