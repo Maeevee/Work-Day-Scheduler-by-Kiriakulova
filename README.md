@@ -2,31 +2,6 @@
 
   - [License](#license)
   
-  
-<style>
-a {
-  color: #0366d6;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
-}
-
-a:hover {
-  color: #6cb6ff;
-  text-decoration: none;
-}
-
-a[name]:before {
-  content: "";
-  display: block;
-  height: 80px; /* fixed header height */
-  margin: -80px 0 0;
-}
-
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
-}
-</style>
 
 ## Description 
 This is a JavaScript code for a daily planner application that allows users to plan their activities for the day. The code uses the moment.js library to display the current day and time and to change the color of the time blocks based on the current time. It also uses local storage to save and retrieve the user's activities: 
