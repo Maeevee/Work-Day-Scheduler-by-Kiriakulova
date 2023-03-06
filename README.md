@@ -21,6 +21,6 @@ Users can also edit or delete their activities by clicking on the corresponding 
 This application was created by [@Maeevee](https://github.com/Maeevee) using [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [Google Fonts](https://fonts.google.com/), [jQuery](https://jquery.com/) and the [Moment.js](https://momentjs.com/) library, [ChatGPT](https://openai.com/blog/chatgpt/) and [Stack Overflow](https://stackoverflow.com/).
 
 ## License 
-![Bower](https://img.shields.io/bower/l/mit)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
