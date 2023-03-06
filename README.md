@@ -1,6 +1,32 @@
 # Work-Day-Scheduler
 
-  [License](https://github.com/Maeevee/Work-Day-Scheduler-by-Kiriakulova#License)
+  - [License](#license)
+  
+  
+<style>
+a {
+  color: #0366d6;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #6cb6ff;
+  text-decoration: none;
+}
+
+a[name]:before {
+  content: "";
+  display: block;
+  height: 80px; /* fixed header height */
+  margin: -80px 0 0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+</style>
 
 ## Description 
 This is a JavaScript code for a daily planner application that allows users to plan their activities for the day. The code uses the moment.js library to display the current day and time and to change the color of the time blocks based on the current time. It also uses local storage to save and retrieve the user's activities: 
@@ -19,5 +45,5 @@ Users can also edit or delete their activities by clicking on the corresponding 
 ## Credits
 This application was created by [@Maeevee](https://github.com/Maeevee) using [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [Google Fonts](https://fonts.google.com/), [jQuery](https://jquery.com/) and the [Moment.js](https://momentjs.com/) library, [ChatGPT](https://openai.com/blog/chatgpt/) and [Stack Overflow](https://stackoverflow.com/).
 
-## License
+## License <a name="license"></a>
 This application is licensed under the MIT license.
