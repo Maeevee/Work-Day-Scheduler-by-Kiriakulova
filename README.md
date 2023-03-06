@@ -22,3 +22,6 @@ This application was created by [@Maeevee](https://github.com/Maeevee) using [Bo
 
 ## License 
 [This application is licensed under the MIT license.](https://img.shields.io/github/license/Maeevee/Work-Day-Scheduler-by-Kiriakulova)
+.. image:: https://img.shields.io/github/license/Maeevee/Work-Day-Scheduler-by-Kiriakulova
+   :alt: GitHub
+   image:https://img.shields.io/github/license/Maeevee/Work-Day-Scheduler-by-Kiriakulova[GitHub]
