@@ -21,9 +21,9 @@ Users can also edit or delete their activities by clicking on the corresponding 
 This application was created by [@Maeevee](https://github.com/Maeevee) using [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [Google Fonts](https://fonts.google.com/), [jQuery](https://jquery.com/) and the [Moment.js](https://momentjs.com/) library, [ChatGPT](https://openai.com/blog/chatgpt/) and [Stack Overflow](https://stackoverflow.com/).
 
 ## License 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License](https://img.shields.io/badge/License-MIT.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-Apache_2.0.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License](https://img.shields.io/badge/License-GPLv3.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-BSD_3--Clause.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
 
