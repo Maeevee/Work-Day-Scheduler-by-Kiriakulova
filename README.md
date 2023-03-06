@@ -21,4 +21,4 @@ Users can also edit or delete their activities by clicking on the corresponding 
 This application was created by [@Maeevee](https://github.com/Maeevee) using [Bootstrap](https://getbootstrap.com/), [Font Awesome](https://fontawesome.com/), [Google Fonts](https://fonts.google.com/), [jQuery](https://jquery.com/) and the [Moment.js](https://momentjs.com/) library, [ChatGPT](https://openai.com/blog/chatgpt/) and [Stack Overflow](https://stackoverflow.com/).
 
 ## License 
-This application is licensed under the MIT license.
+[This application is licensed under the MIT license.](https://img.shields.io/github/license/Maeevee/Work-Day-Scheduler-by-Kiriakulova)
