@@ -1,5 +1,7 @@
 # Work-Day-Scheduler
 
+  [License](https://github.com/Maeevee/Work-Day-Scheduler-by-Kiriakulova#License)
+
 ## Description 
 This is a JavaScript code for a daily planner application that allows users to plan their activities for the day. The code uses the moment.js library to display the current day and time and to change the color of the time blocks based on the current time. It also uses local storage to save and retrieve the user's activities: 
 ![](/assets/save-data-to-local-storage.gif)
