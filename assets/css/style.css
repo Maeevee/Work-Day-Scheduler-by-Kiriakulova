@@ -140,6 +140,21 @@ header h1 {
   border-radius: 10px;
 }
 
+.past {
+  background-color: #d3d3d3;
+  color: #000;
+}
+
+.present {
+  background-color: #d6453d;
+  color: #000;
+}
+
+.future {
+  background-color: #48be48;
+  color: #000;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
